@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 17
+        versionName 2.5.9
+        versionCode 2
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/ShareSDK-Core-2.5.9.jar')
+    compile files('libs/ShareSDK-Email-2.5.9.jar')
+    compile files('libs/ShareSDK-Facebook-2.5.9.jar')
+    compile files('libs/ShareSDK-GooglePlus-2.5.9.jar')
+    compile files('libs/ShareSDK-Line-2.5.9.jar')
+    compile files('libs/ShareSDK-QQ-2.5.9.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.5.9.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.5.9.jar')
+    compile files('libs/ShareSDK-Twitter-2.5.9.jar')
+    compile files('libs/ShareSDK-Wechat-2.5.9.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.5.9.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.5.9.jar')
+    compile files('libs/ShareSDK-WhatsApp-2.5.9.jar')
+}
